@@ -3,9 +3,9 @@ export default function SchemaMarkup() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "TechSolve Cambodia",
-    "image": "https://techsolvecambodia.com/logo.webp",
-    "@id": "https://techsolvecambodia.com/",
-    "url": "https://techsolvecambodia.com/",
+    "image": "https://techsolvecambodia.vercel.app/logo.webp",
+    "@id": "https://techsolvecambodia.vercel.app/",
+    "url": "https://techsolvecambodia.vercel.app/",
 
     "telephone": "+855-969-030-402", // replace with real number
 

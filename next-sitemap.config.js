@@ -1,6 +1,6 @@
 const { createClient } = require("contentful");
 
-const SITE_URL = "https://techsolvecambodia.com";
+const SITE_URL = "https://techsolvecambodia.vercel.app";
 
 const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
