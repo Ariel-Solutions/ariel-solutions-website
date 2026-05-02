@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://techsolvecambodia.com
+
+# Sitemaps
+Sitemap: https://techsolvecambodia.com/sitemap.xml

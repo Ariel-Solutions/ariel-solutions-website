@@ -1,17 +1,27 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
-import Script from "next/script";
-import "./globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
+import "bootstrap/dist/css/bootstrap.css";
+import BootstrapClient from "./lib/bootstrap/BootstrapClient";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import SwiperBootstrap from "./lib/bootstrap/SwiperBootstrap";
+import { bussinessInfo } from "./data/data";
+import SchemaMarkup from "./components/SchemaMarkup";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  weight: "900",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Ariel Solutions",
-  description: "Innovative Tech Solutions For Businesses",
+  title: `${bussinessInfo.header}`,
+  description: `${bussinessInfo.title}`,
 };
 
 export default function RootLayout({
@@ -20,23 +30,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-WXW7Z2MHF4"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-WXW7Z2MHF4');
-          `}
-        </Script>
-      </head>
-      <body className={geistSans.variable}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
+        <Navbar />
+
         {children}
+
+        <Footer />
+
+        <BootstrapClient />
+        <SwiperBootstrap />
+        <SchemaMarkup />
+        <Analytics />
       </body>
     </html>
   );

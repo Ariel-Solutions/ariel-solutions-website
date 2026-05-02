@@ -1,9 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactCompiler: true,
   images: {
-    domains: ["images.unsplash.com"], // ✅ Add this
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.ctfassets.net",
+      },
+    ],
+    domains: ["images.unsplash.com"],
   },
 };
 
