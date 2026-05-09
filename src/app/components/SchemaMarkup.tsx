@@ -2,10 +2,10 @@ export default function SchemaMarkup() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "TechSolve Cambodia",
-    "image": "https://techsolvecambodia.vercel.app/logo.webp",
-    "@id": "https://techsolvecambodia.vercel.app/",
-    "url": "https://techsolvecambodia.vercel.app/",
+    "name": "Ariel Solutions",
+    "image": "https://arielsolutions.arian.my/logo.webp",
+    "@id": "https://arielsolutions.arian.my/",
+    "url": "https://arielsolutions.arian.my/",
 
     "telephone": "+855-969-030-402", // replace with real number
 
@@ -35,8 +35,8 @@ export default function SchemaMarkup() {
 
     "sameAs": [
       // add socials here later
-      // "https://facebook.com/techsolvecambodia",
-      // "https://linkedin.com/company/techsolvecambodia"
+      "https://web.facebook.com/profile.php?id=61587138651324",
+      "https://linkedin.com/company/arielsolutions"
     ]
   };
 

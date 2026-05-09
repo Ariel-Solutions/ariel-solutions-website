@@ -1,8 +1,8 @@
-# TechSolve - Technology Solutions Website
+# Ariel Solutions - Website
 
 > **AI, automation, and modern software systems built to scale businesses efficiently.**
 
-TechSolve is a modern, high-performance website built with Next.js that showcases comprehensive technology solutions and services. It features service portfolios, team showcases, blog resources, and a robust contact system with Contentful CMS integration.
+Ariel Solutions is a modern, high-performance website built with Next.js that showcases comprehensive technology solutions and services. It features service portfolios, team showcases, blog resources, and a robust contact system with Contentful CMS integration.
 
 ## 🚀 Features
 
@@ -244,4 +244,4 @@ For questions or issues, please reach out through the contact form at `/contact`
 
 ---
 
-**Built with ❤️ by TechSolve Team**
+**Built with ❤️ by Ariel Solutions Team**

@@ -50,7 +50,7 @@ export default function Contact() {
     <main className="container py-5">
       <div className="row justify-content-center">
         <div className="col-12 col-lg-8">
-          <h2 className="fw-bold mb-4 text-center">Contact TechSolve</h2>
+          <h2 className="fw-bold mb-4 text-center">Contact Ariel Solutions</h2>
 
           {sent && (
             <div className="alert alert-success">

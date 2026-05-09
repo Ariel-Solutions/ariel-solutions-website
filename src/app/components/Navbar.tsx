@@ -11,7 +11,7 @@ export default function Navbar() {
                 <Link href="/" className="navbar-brand d-flex align-items-center gap-3">
                     <Image
                         src="/logo.svg"
-                        alt="Techsolve Logo"
+                        alt="Ariel Solutions Logo"
                         width={64}
                         height={64}
                     />

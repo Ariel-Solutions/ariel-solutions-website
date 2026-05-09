@@ -1,7 +1,7 @@
 export default function PrivacyPolicyPage() {
   const privacyPolicy = `
 1. Introduction
-This website is operated by TechSolve Cambodia ("we", "us", "our"). We are committed to protecting your privacy and handling your personal information in accordance with applicable data protection principles.
+This website is operated by Ariel Solutions ("we", "us", "our"). We are committed to protecting your privacy and handling your personal information in accordance with applicable data protection principles.
 
 2. What Information We Collect
 We may collect personal information when you submit a contact form, including:
@@ -64,8 +64,8 @@ You may request access to or deletion of your personal data by contacting us.
 11. Contact
 If you have any questions about this Privacy Policy, contact us:
 
-TechSolve Cambodia  
-techsolvecambodia@gmail.com
+Ariel Solutions  
+arielsolutions2026@gmail.com
 +855969030402
 
 12. Updates

@@ -5,7 +5,7 @@ export const links = [
 ];
 
 export const bussinessInfo = {
-    header: "TechSolve",
-    title: "Technology Solutions",
+    header: "Ariel Solutions",
+    title: "Bussiness and Software Solutions",
     describe: "AI, automation, and modern software systems built to scale businesses efficiently."
 };

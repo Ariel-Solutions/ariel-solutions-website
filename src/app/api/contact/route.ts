@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
     const html = `
       <div style="font-family: sans-serif; max-width: 600px; margin: auto;">
 
-        <h2 style="color: #333;">New Contact — TechSolve</h2>
+        <h2 style="color: #333;">New Contact — Ariel Solutions</h2>
 
         <table style="width:100%; border-collapse: collapse;">
           <tr><td style="padding: 8px; font-weight: bold;">Name</td><td>${escapeHtml(name)}</td></tr>
@@ -113,9 +113,9 @@ export async function POST(req: NextRequest) {
     `;
 
     await transporter.sendMail({
-      from: `"TechSolve Contact" <${process.env.EMAIL_USER}>`,
+      from: `"Ariel Solutions Contact" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
-      subject: `[TechSolve] ${subject.replace(/[\r\n]/g, "")}`,
+      subject: `[Website] ${subject.replace(/[\r\n]/g, "")}`,
       replyTo: email,
       html,
     });

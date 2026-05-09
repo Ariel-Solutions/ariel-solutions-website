@@ -17,7 +17,7 @@ export default function Footer() {
                         >
                             <Image
                                 src="/logo.svg"
-                                alt="Techsolve Logo"
+                                alt="Ariel Solutions Logo"
                                 width={64}
                                 height={64}
                             />
@@ -72,7 +72,7 @@ export default function Footer() {
                     style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}
                 >
                     <small className="text-secondary">
-                        &copy; {new Date().getFullYear()} TechSolve Cambodia. All rights reserved.
+                        &copy; {new Date().getFullYear()} Ariel Solutions. All rights reserved.
                     </small>
 
                     <small className="text-secondary">
