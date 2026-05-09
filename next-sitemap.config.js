@@ -30,6 +30,8 @@ const getChangeFreq = (type) => {
             return "weekly";
         case "services":
             return "monthly";
+        case "people":
+            return "monthly"
         default:
             return "weekly";
     }
@@ -42,9 +44,10 @@ module.exports = {
     additionalPaths: async () => {
         const paths = [];
 
-        const [blogs, services] = await Promise.all([
+        const [blogs, services, teamMember] = await Promise.all([
             fetchEntries("blogs"),
             fetchEntries("services"),
+            fetchEntries("teamMember"),
         ]);
 
         blogs.forEach((item) => {
@@ -62,6 +65,12 @@ module.exports = {
                 changefreq: getChangeFreq("services"),});
         });
 
+        teamMember.forEach((item) => {
+            const slug = item?.fields?.slug;
+            if (slug) paths.push({
+                loc: `/people/${slug}`,
+                changefreq: getChangeFreq("teamMember"),});
+        });
         return paths;
     },
 };
